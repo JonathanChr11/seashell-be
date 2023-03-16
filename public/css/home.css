@@ -1,0 +1,39 @@
+/* Testimoni */
+.slide-container {
+    display: none;
+}
+
+.slide-container.active {
+    display: block;
+}
+
+.slide > * {
+    animation: opac 1s linear;
+}
+
+@keyframes opac {
+    0% {
+        opacity: 0.25;
+    }
+}
+
+/* Form */
+.form-control input {
+    border: 1px solid transparent;
+}
+.form-control textarea {
+    border: 1px solid transparent;
+}
+.form-control.error input {
+    border-color: #dc2c26;
+}
+.form-control.error textarea {
+    border-color: #dc2c26;
+}
+.form-control small {
+    visibility: hidden;
+}
+.form-control.error small {
+    color: #dc2c26;
+    visibility: visible;
+}
